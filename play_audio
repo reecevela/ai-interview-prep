@@ -1,0 +1,5 @@
+import subprocess
+
+def play_audio(file_name):
+    command = ["ffplay", "-nodisp", "-autoexit", file_name]
+    subprocess.run(command)
